@@ -4,8 +4,8 @@ function arr = Bitonic_sorting(in)
     % Syntax: arr = Bitonic_sorting(in)
     %
     % Long description
-        arr = Bitonic_sort(in, 1, size(in, 2));
-    end
+    arr = Bitonic_sort(in, 1, size(in, 2));
+end
 
 function arr = Bitonic_sort(in, left, right)
     len = right - left + 1;
@@ -38,9 +38,6 @@ function in = merge(in, left, right)
     in = merge(in, left, left + len / 2 - 1);
     in = merge(in, left + len / 2, right);
 end
-
-
-
 
 function in = compare(in, a, b)
     if in(a) > in(b)
