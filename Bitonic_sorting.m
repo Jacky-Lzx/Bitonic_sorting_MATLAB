@@ -1,3 +1,12 @@
+function arr = Bitonic_sorting(in)
+    %Bitonic_sorting - Description
+    %
+    % Syntax: arr = Bitonic_sorting(in)
+    %
+    % Long description
+        arr = Bitonic_sort(in, 1, size(in, 2));
+    end
+
 function arr = Bitonic_sort(in, left, right)
     len = right - left + 1;
     
