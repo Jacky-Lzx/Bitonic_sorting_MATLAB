@@ -1,8 +1,12 @@
 clf;
+clear;
+clc;
 
 n = 16;
 xLen = 3;
 yLen = 6;
+
+load(strcat('counts_', num2str(n)));
 
 total_max = 1;
 len = size(counts, 2);
